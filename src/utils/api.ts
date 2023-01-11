@@ -2,7 +2,6 @@ import axios from "axios";
 
 export const getTodos = () => {
     return axios.get(`https://6319a47a6b4c78d91b3fd4c9.mockapi.io/api/v1/todo`)
-
 }
 
 export const deleteTodo = (id: string) => {

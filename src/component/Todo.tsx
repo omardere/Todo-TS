@@ -15,10 +15,10 @@ const Todo: React.FunctionComponent<todoProps> = ({ title, assginedTo, onCheck, 
                     <Typography variant="body1">
                         {title} Assigned To {assginedTo}
                     </Typography>
-                    <IconButton sx={{ float: "right" }} onClick={markChecked}>
+                    <IconButton data-testid="check-icon" sx={{ float: "right" }} onClick={markChecked}>
                         <Check sx={checkStyle} />
                     </IconButton>
-                    <IconButton onClick={deletetodo} sx={{ float: "right" }}>
+                    <IconButton data-testid="delete-icon" onClick={deletetodo} sx={{ float: "right" }}>
                         <Delete sx={{ color: "red" }} />
                     </IconButton>
                 </CardContent>
